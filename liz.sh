@@ -1,9 +1,10 @@
 #!/bin/bash
 
-############################
-# Strelizia Auto Scan Tools#
-# coded by: Yukki666       #
-############################
+###################################
+# Tools Inspired by Yukkinoshita47#
+# Strelizia Auto Scan Tools       #
+# coded by: Yukki666              #
+###################################
 
 cyan='\e[0;36m'
 green='\e[0;34m'
