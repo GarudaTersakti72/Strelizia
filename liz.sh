@@ -1,10 +1,9 @@
 #!/bin/bash
 
-###################################
-# Tools Inspired by Yukkinoshita47#
-# Strelizia Auto Scan Tools       #
-# coded by: Yukki666              #
-###################################
+############################
+# Strelizia Auto Scan Tools#
+# coded by: Yukki666       #
+############################
 
 cyan='\e[0;36m'
 green='\e[0;34m'
@@ -34,8 +33,92 @@ function ctrl_c() {
     sleep 1
     exit
 }
-sleep 1.3
+
 clear
+which nmap > /dev/null 2>&1
+if [ "$?" -eq "0" ]; then
+echo -e $cafe "[ ✔ ] Nmap..............$okegreen[ found ]"
+sleep 1
+which nmap > /dev/null 2>&1
+sleep 2
+else
+echo -e $red "[ X ] Nmap Instalation Not Found! "
+exit
+fi
+
+which whois > /dev/null 2>&1
+if [ "$?" -eq "0" ]; then
+sleep 1
+echo -e $cafe "[ ✔ ] Whois..............$okegreen[ found ]"
+sleep 1
+which whois > /dev/null 2>&1
+sleep 2
+else
+echo -e $red "[ X ] whois Instalation Not Found! "
+exit
+fi
+
+which python > /dev/null 2>&1
+if [ "$?" -eq "0" ]; then
+sleep 1
+echo -e $cafe "[ ✔ ] Python..............$okegreen[ found ]"
+sleep 1
+which python > /dev/null 2>&1
+sleep 2
+else
+sleep 1
+echo -e $red "[ X ] Python Instalation Not Found! "
+exit
+fi
+
+which ruby > /dev/null 2>&1
+if [ "$?" -eq "0" ]; then
+sleep 1
+echo -e $cafe "[ ✔ ] Ruby..............$okegreen[ found ]"
+sleep 1
+which ruby > /dev/null 2>&1
+sleep 2
+else
+echo -e $red "[ X ] Ruby Instalation Not Found! "
+exit
+fi
+
+which perl > /dev/null 2>&1
+if [ "$?" -eq "0" ]; then
+sleep 1
+echo -e $cafe "[ ✔ ] Perl..............$okegreen[ found ]"
+sleep 1
+which perl > /dev/null 2>&1
+sleep 2
+else
+echo -e $red "[ X ] Perl Instalation Not Found! "
+exit
+fi
+
+which pip > /dev/null 2>&1
+if [ "$?" -eq "0" ]; then
+sleep 1
+echo -e $cafe "[ ✔ ] Pip..............$okegreen[ found ]"
+sleep 1
+which pip > /dev/null 2>&1
+sleep 2
+else
+echo -e $red "[ X ] pip Instalation Not Found! "
+exit
+fi
+
+if [ "$?" -eq "0" ]; then
+echo -e $okegreen "You Requirements is All Installed!"
+sleep 1
+clear
+else 
+clear
+echo -e $red "Your Requirements Not Installed!! type ./liz-install.sh! "
+sleep 0.4
+exit
+fi
+
+sleep 1.3
 echo -e $purple"                        ug"
 echo -e $purple"                       b"
 echo -e $purple"                      g           bug"
