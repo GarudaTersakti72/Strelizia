@@ -34,6 +34,7 @@ git clone https://github.com/m4ll0k/WAScan
 #WhatWeb
 git clone https://github.com/urbanadventurer/WhatWeb
 #####
+cd ..;chmod +x liz.sh
 echo "All Requirements File Done!"
 sleep 1
 echo "Type ./liz.sh to Run Strelizia."
