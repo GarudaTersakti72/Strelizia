@@ -10,6 +10,9 @@ An easy tools for Scanner Vulnerability and Information Gathering Tools
 <img src="https://raw.githubusercontent.com/GarudaTersakti72/Strelizia/master/Screenshot%20at%202018-11-07%2020-28-14.png" width="95%"></img>
 
 # Install Strelizia
+<br>
+
+### Via Linux
 
 - apt-get update
 
@@ -22,6 +25,18 @@ An easy tools for Scanner Vulnerability and Information Gathering Tools
 - chmod +x liz-install.sh
 
 - ./liz-install.sh
+
+### Via Android (Termux)
+
+- pkg update
+
+- pkg install git
+
+- git clone https://github.com/GarudaTersakti72/Strelizia/
+
+- cd Strelizia
+
+- bash liz-termux.sh
 
 #### Almost Done! type ./liz.sh for Run Strelizia.
 
