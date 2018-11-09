@@ -26,6 +26,8 @@ An easy tools for Scanner Vulnerability and Information Gathering Tools
 
 - ./liz-install.sh
 
+#### Almost Done! type ./liz.sh for Run Strelizia.
+
 ### Via Android (Termux)
 
 - pkg update
@@ -38,7 +40,7 @@ An easy tools for Scanner Vulnerability and Information Gathering Tools
 
 - bash liz-termux.sh
 
-#### Almost Done! type ./liz.sh for Run Strelizia.
+#### Almost Done! type bash liz.sh for Run Strelizia.
 
 # Thanks for
 
